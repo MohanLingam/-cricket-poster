@@ -36,13 +36,13 @@ function App() {
 
       <div className="poster">
         <div className="poster-div">
-          <h1 className="final">FINAL</h1>
-           <h4 className="small-title">Cricket <br /> Championship</h4> 
+          <h1 className="final">MATCH</h1>
+           <h4 className="small-title">VVN <br /> Guys Tournament</h4> 
         </div>
-        <h1 className="match">MATCH</h1>
+        <h1 className="match">DAY</h1>
         <div className="teams">
           <h3 className="home">{homeTeam || "HOME"}</h3>
-          <h3 className="vs">VS</h3>
+          <h3 className="vs">V/S</h3>
           <h3 className="away">{awayTeam || "AWAY"}</h3>
         </div>
         <p className="datetime">
@@ -50,6 +50,9 @@ function App() {
           <br />
           {matchTime ? `At ${matchTime}` : "At 11:00 AM"}
         </p>
+        <address>
+          Location : Vilvarayanallur Cricket Ground
+        </address>
       </div>
     </div>
   );
